@@ -25,6 +25,10 @@ Monty Hall problem taken from A. Downey's book.
 
 class Experiment:    
     def __init__(self, variables, lists):
+        """
+        variables : list of variable names
+        lists : each combination of each variable names.
+        """
         lists = list (product(*lists ))
         self.omega = DataFrame(lists)        
         self.omega["Tally"] = pd.Series(0, index=self.omega.index)        
@@ -65,7 +69,7 @@ class Experiment:
             p = prizes[i]
             d = doors[i]            
             s = "switch" if strategy[i] == 1 else "stick"
-            
+            ''' tally add 1 '''
             self.omega.loc[(self.omega["Prize"]==str(p)) & (self.omega["Door"]==str(d)) & (self.omega["Strategy"]==s), "Tally"] += 1
                            
     def assignlabels(self):
