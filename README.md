@@ -43,6 +43,17 @@ It will display as such:
 | choco    | b1    | 10    |
 | choco    | b2    | 20    |
 
+4. Now let's inquiry the model. 
+
+What is the probability of Bowl1 and Vanilla both picked?
+```
+print ex.p( ( ex.omega["Bowl"]=="b1" ) & ( ex.omega["Flavor"]=="vanilla" ) ) 
+```
+
+What is the probability of Bowl1 given Vanilla? == P(b1|vanilla) 
+```
+print ex.p_given( ex.omega["Bowl"]=="b1", ex.omega["Flavor"]=="vanilla" ) 
+```
 
 ## References:
 
