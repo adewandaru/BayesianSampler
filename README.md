@@ -39,7 +39,7 @@ It will display as such:
 | Flavor   | Bowl  | Tally |
 | -------- |:-----:| -----:|
 | vanilla  | b1    | 30    |
-| vanilla  | b1    | 20    |
+| vanilla  | b2    | 20    |
 | choco    | b1    | 10    |
 | choco    | b2    | 20    |
 
@@ -49,6 +49,7 @@ What is the probability of Bowl1 and Vanilla both picked?
 ```
 print ex.p( ( ex.omega["Bowl"]=="b1" ) & ( ex.omega["Flavor"]=="vanilla" ) ) 
 ```
+It will return 0.6, logically we expect b1 is more likely to be picked given that vanilla is more than chocolate in bowl 1.
 
 What is the probability of Bowl1 given Vanilla? == P(b1|vanilla) 
 ```
