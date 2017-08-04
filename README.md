@@ -35,6 +35,7 @@ ex.set( (ex.omega["Bowl"]=="b2") & (ex.omega["Flavor"]=="choco"), 20 )
 print ex
 ```
 It will display as such:
+
 | Flavor   | Bowl  | Tally |
 | -------- |:-----:| -----:|
 | vanilla  | b1    | 30    |
