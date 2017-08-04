@@ -78,7 +78,10 @@ ex.set( (ex.omega["Bowl"]=="b2") & (ex.omega["Flavor"]=="choco"), 20 )
 print ex
 
 # what is the probability of Bowl1 given Vanilla? == P(b1|vanilla) 
-print ex.p_given( ex.omega["Bowl"]=="b1", ex.omega["Flavor"]=="vanilla" )  
+print ex.p_given( ex.omega["Bowl"]=="b1", ex.omega["Flavor"]=="vanilla" ) 
+
+# what is the probability of Bowl1 and Vanilla both picked?
+print ex.p( ( ex.omega["Bowl"]=="b1" ) & ( ex.omega["Flavor"]=="vanilla" ) ) 
 
 
   
