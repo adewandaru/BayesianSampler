@@ -3,8 +3,17 @@ BayesianSampler is a simple, extensible module for understanding Bayesian Networ
 It built on top of Numpy and Pandas to provide an intuitive and working numbers so student can learn better about probabilistic model.
 
 ## How to use:
-1. Define the experiment's random variable
+1. Define the experiment's random variable and their possible values. 
+In this example, "Prize" can have 1,2,3 indicating the door known by the host which contain the prize. The "Door" is the door selected initially by the player. The "Strategy" can be of either "switch" or "stick".
 
+Examples:
+```
+#Monty Hall case:
+
+ex = Experiment(["Prize","Door","Strategy"], [["1","2","3"], ["1","2","3"], ["switch","stick"]] )
+```
+
+2. That will create 
 
 ## References:
 
