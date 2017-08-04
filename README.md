@@ -43,18 +43,18 @@ It will display as such:
 | choco    | b1    | 10    |
 | choco    | b2    | 20    |
 
-4. Now let's inquiry the model. 
+4. Now let's inquiry the model. Use the ex.p () function for simple probability. Use the ex.p_given () for conditional probability.
 
 What is the probability of Bowl1 and Vanilla both picked?
 ```
 print ex.p( ( ex.omega["Bowl"]=="b1" ) & ( ex.omega["Flavor"]=="vanilla" ) ) 
 ```
-It will return 0.6, logically we expect b1 is more likely to be picked given that vanilla is more than chocolate in bowl 1.
 
 What is the probability of Bowl1 given Vanilla? == P(b1|vanilla) 
 ```
 print ex.p_given( ex.omega["Bowl"]=="b1", ex.omega["Flavor"]=="vanilla" ) 
 ```
+It will return 0.6, logically we expect b1 is more likely to be picked given that vanilla is more than chocolate in bowl 1.
 
 ## References:
 
