@@ -68,6 +68,8 @@ Open the file (dirichlet-multinomial.py) and run it. You can modify the "seq" pa
 appear, '2' to represent dice roll number 2 appear and so forth.
 The visualization shows 2-simplex with the fourth parameter is represented in color (heatmap). 
 
+![alt text](https://github.com/adewandaru/BayesianSampler/blob/master/anim.gif)
+
 
 ## References:
 
