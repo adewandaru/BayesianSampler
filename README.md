@@ -61,11 +61,12 @@ The two files that is relevant is beta-binomial.py and  dirichlet-multinomial.py
 Start with the first (beta-binomial.py) simplest example of coin tosses.
 modify the "seq" string variable with any coin tosses that you want to simulate, indicating 'H' for head and
 'T' for tail.
+
 The program will start from left to the right and, applying new toss data to modify the initial belief accordingly 
 using Bayesian principle. Similarly, the multinomial version is represented using dice roll program simulation.
 Open the file (dirichlet-multinomial.py) and run it. You can modify the "seq" param using '1' to represent number 1
-appear and so forth. In
-
+appear, '2' to represent dice roll number 2 appear and so forth.
+The visualization shows 2-simplex with the fourth parameter is represented in color (heatmap). 
 
 
 ## References:
